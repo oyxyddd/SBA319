@@ -14,7 +14,8 @@ const app = express()
 
 app.use(express.json())
 
-// import restaurantRouter from "./"
+import restaurantRouter from "./routers/restaurants.js"
+app.use('/restaurants',restaurantRouter)
 
-// app.listen(3000, () => {console.log('Server Started')})
+app.listen(3000, () => {console.log('Server Started')})
 
