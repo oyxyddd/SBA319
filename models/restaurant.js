@@ -1,16 +1,23 @@
 import mongoose from "mongoose"
+const Schema = mongoose.Schema;
 
-const restaurantSchema = new mongoose.Schema({
-    address: Object,
-    borough: String,
-    cusine: String,
-    grades :[],
-    name: {
-        type:String,
-        required: true
-    },
-    restaurant_id: String
+const commentSchema = new Schema({
+    name : String,
+    email : String,
+    movie_id : mongoose.Schema.ObjectId,
+    text : String,
+    date : Date
 })
 
-const RestaurantModel = mongoose.model("Restaurant",restaurantSchema)
-export default RestaurantModel
+const movieSchema = new Schema({
+    title : String,
+    directors : [String],
+    languages : [String],
+    year : number
+})
+
+const userSchema = new Schema({
+    name : String,
+    email : String,
+    password : String
+})
