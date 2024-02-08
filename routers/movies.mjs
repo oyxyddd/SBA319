@@ -1,12 +1,12 @@
 import express from "express"
 const router = express.Router()
-import comment from "../models/comment.mjs"
+import Movies from "../models/movie.mjs"
 
 //Getting all 
 router.get('/', async (req, res) => {
     try {
-        const restaurants = await RestaurantModel.find()
-        res.json(restaurants)
+        const movies = await Movies.find()
+        res.json(movies)
     } catch (err) {
         res.status(500).json({message: err.message})
     }

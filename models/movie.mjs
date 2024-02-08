@@ -5,7 +5,7 @@ const movieSchema = new Schema({
     title : String,
     directors : [String],
     languages : [String],
-    year : number
+    year : Number
 })
 
 const Movies = mongoose.model("Movies",movieSchema)

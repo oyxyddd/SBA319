@@ -1,4 +1,16 @@
-GET http://localhost:3000/restaurants
+GET http://localhost:3000/users
 
 ###
-GET http://localhost:3000/restaurants/40352
+GET http://localhost:3000/users/Shae
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name" : "Xinyi",
+    "email" : "OyxYDDD@gmail.com",
+    "password" : "xdrjsrhehrjewsdfsdf"
+}
+
+###
