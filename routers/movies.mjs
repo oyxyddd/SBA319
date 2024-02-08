@@ -1,6 +1,6 @@
 import express from "express"
 const router = express.Router()
-import RestaurantModel from "../models/comment.js"
+import comment from "../models/comment.mjs"
 
 //Getting all 
 router.get('/', async (req, res) => {
