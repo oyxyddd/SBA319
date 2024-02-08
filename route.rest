@@ -1,7 +1,7 @@
 GET http://localhost:3000/users
 
 ###
-GET http://localhost:3000/users/Shae
+GET http://localhost:3000/users/localhost:3000/users/stephen_dillane@gameofthron.es
 
 ###
 POST http://localhost:3000/users
@@ -12,5 +12,13 @@ Content-Type: application/json
     "email" : "OyxYDDD@gmail.com",
     "password" : "xdrjsrhehrjewsdfsdf"
 }
-
 ###
+POST http://localhost:3000/oyxyddd@gmail.com
+Content-Type: application/json
+
+{
+    "name" : "New Xinyi",
+}
+###
+DELETE POST http://localhost:3000/users/oyxyddd@gmail.com
+ 
